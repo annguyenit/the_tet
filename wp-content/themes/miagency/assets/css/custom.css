@@ -1,0 +1,257 @@
+@charset "utf-8";
+.fix-to-top{
+    position: fixed;
+    top: 0px;
+    bottom: auto !important;
+}
+#header {
+    background-color: #464646;
+    min-height: 70px;
+    padding: 0 100px;
+}
+#header ul li {
+    padding: 20px 15px 0;
+}
+#header ul.black li a {
+    color: #fff;
+}
+#header ul.black li a:hover, #header ul.black li a:active {
+    color: red;
+}
+.scroll-down-arrow {
+    margin-top: 10px;
+    height: 33px;
+    width: 33px;
+}
+
+#header .logo {
+    background-size: contain;
+    display: block;
+    height: 31px;
+    left: 47px;
+    position: absolute;
+    top: 20px;
+    width: 143px;
+}
+
+.arrow-scrolldown {
+    padding-bottom: 85px; 
+    margin-top: 50px;
+}
+
+.intro-para-text {
+    color: #000;
+}
+
+#about-tet {
+    background-color: #e61e2b;
+}
+#about-tet .about-intro-head {
+    color: #fff;
+    padding-bottom: 35px;
+}
+/* flex slider about */
+@font-face {
+    font-family: 'flexslider-icon';
+    src:url('../fonts/webfonts/flexslider-icon.eot');
+    src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
+            url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
+            url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* about slider */
+#about-tet .flexslider {
+    background-color: #e61e2b;
+    border-color: #e61e2b;
+}
+
+#about-tet .flexslider .slides p {
+    color: #fff !important;
+}
+
+#about-tet .flexslider .flex-direction-nav a,
+#about-tet .flexslider .flex-direction-nav a {
+display: block; /* I added this line */
+}
+
+#about-tet .flex-direction-nav .flex-next { right: 0 !important; margin-right: -30px; opacity: 1 !important; }
+#about-tet .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
+//#about-tet .flexslider { width: 90%; margin: 0 auto; }
+#about-tet .flex-direction-nav a:before {
+    //background-image: url('images/nav-prev.png');
+    font-family: "flexslider-icon";
+    font-size: 25px;
+    display: inline-block;
+    content: '\f001';
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#about-tet .flex-control-paging li a {
+  width: 70px;
+  height: 9px;
+  display: block;
+  background: #555555;
+  background: rgba(85, 85, 85, 1);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+#about-tet .flex-control-paging li a:hover {
+  background: #555555;
+  background: rgba(0, 0, 0, 0.7);
+}
+#about-tet .flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: default;
+}
+
+#about-tet .flex-direction-nav a.flex-next:before {
+    content: '\f002';
+    //background-image: url('images/nav-next.png');
+}
+
+#about-tet .flex-direction-nav .flex-prev {
+    //left: -50px;
+}
+
+/* question block */
+#question {
+    background-color: #fff;
+}
+
+/* question slider */
+#question .flexslider {
+    padding: 10% 0;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+#question .flexslider .slides p {
+    color: #000 !important;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+#question .flexslider .flex-direction-nav a,
+#question .flexslider .flex-direction-nav a {
+    display: block; /* I added this line */
+}
+
+#question .flex-direction-nav .flex-next { right: 0 !important; margin-right: -30px; opacity: 1 !important; }
+#question .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
+#question .flex-direction-nav a:before {
+    //background-image: url('images/nav-prev.png');
+    font-family: "flexslider-icon";
+    font-size: 25px;
+    display: inline-block;
+    content: '\f001';
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#question .flex-control-paging li a {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: #959595;
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+#question .flex-control-paging li a:hover {
+  background: #707070;
+}
+#question .flex-control-paging li a.flex-active {
+  background: #c2c2c2;
+  cursor: default;
+}
+
+#question .flex-direction-nav a.flex-next:before {
+    content: '\f002';
+    //background-image: url('images/nav-next.png');
+}
+
+#question .flex-direction-nav .flex-prev {
+    //left: -50px;
+}
+
+
+/* project block */
+#project .proj-text-head {
+    font-size: 4.5em;
+    color: #fff;
+    padding-top: 50%;
+    padding-bottom: 20px;
+}
+#project .proj-text-view {
+    color: #fff;
+    line-height: 1.2em;
+}
+
+/* contact block */
+#contact {
+    
+}
+
+#contact .wpcf7-form input[type="text"], .wpcf7-form textarea, .wpcf7-form input[type="email"] {
+    border: 1px solid #c7c7c7;
+    display: block;
+    height: 2.8em;
+    padding-left: 15px;
+    text-align: left;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.35em;
+    font-weight: 300;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+}
+
+#contact .wpcf7-form textarea {
+    height: 10em;
+}
+
+#contact .wpcf7-form .name {
+    padding-right: 5px;
+}
+#contact .wpcf7-form .phone {
+    padding-left: 5px;
+}
+
+#contact .wpcf7-form .wpcf7-submit, .form-submit #submit_btn {
+    background: #464646 !important;
+    color: #fff;
+}
+
+#contact .wpcf7-form .btn-effect {
+    border: 2px solid #464646;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.125em;
+    padding: 12px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    z-index: 1;
+}

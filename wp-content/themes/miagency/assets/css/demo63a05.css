@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/*****************************************************/
+/* Demo6 CSS */
+/*****************************************************/
+
+/* Home page */
+.land {
+	background: url("../img/photography/backgroundimage.html") no-repeat fixed center center  rgba(0, 0, 0, 0);
+	background-size: cover;
+	min-height: 500px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.land {
+	background-attachment:scroll;
+}
+}
+.land-anchor {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.photo-text {
+	bottom: 50px;
+	left: 10%;
+	position: absolute;
+}
+
+.first-proj-photo {
+	height: 100%;
+	min-height: 500px;
+	width: 100%;
+	opacity: 0.5;
+	background-size: cover;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.first-proj-photo:hover,
+			.second-proj-photo:hover,
+			.third-proj-photo:hover,
+			.forth-proj-photo:hover,
+			.fifth-proj-photo:hover {
+	opacity: 1;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.proj-text-head {
+	color: #000;
+	padding-top: 80%;
+}
+
+.photo-land-text {
+	display: table;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	text-align: center;
+    top: 50%;
+	width: 100%;
+}
+
+.land-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.author {
+	padding-bottom: 1%!important;
+}
+
+.author-designation {
+	padding-bottom: 0!important;
+}
+
+.page-template-photography-layout #header ul,
+.portfolio-v2 #header ul{
+	display: block;
+}
+
+.page-template-photography-layout #header ul li a,
+.portfolio-v2 #header ul li a {
+	color: #fff;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.page-template-photography-layout #header .photo-logo,
+.portfolio-v2 #header .photo-logo {
+	left: 47px;
+	position: absolute;
+	top: 20px;
+	width: 50px;
+}
+
+.page-template-photography-layout #header .photo-logo svg,
+.portfolio-v2 #header .photo-logo svg {
+	fill: #fff;
+}
+.landing-sec {
+	background-color: #97d3bf;
+}
+.landing-sec .h3-30,.landing-sec p {
+	color:#000;
+}
+
+.about-body {
+	background: #97d3bf;
+}
+.about-body p {
+	color:#000;
+}
+.about-body footer a, .about-body footer a:hover, .about-body footer a:focus {
+    color: #000;
+}
+.about-body .about-footer {
+	background:none;
+}
+/*****************************************************/
+/* Removing Hover On touch Devices CSS */
+/*****************************************************/
+@media only screen and (max-width: 1024px) {
+.first-proj-photo ,.second-proj-photo,.third-proj-photo,.forth-proj-photo, .fifth-proj-photo{
+    opacity: 1;
+}
+.first-proj-photo:hover, .second-proj-photo:hover, .third-proj-photo:hover, .forth-proj-photo:hover, .fifth-proj-photo:hover {
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+.land {
+    background-attachment:scroll;;
+    min-height: 600px;
+}
+}
+@media only screen and (max-width: 768px) {
+.land {
+   min-height: 800px;
+}
+}
+@media only screen and (max-width: 737px) {
+.land {
+    min-height: 300px;
+}
+
+#header .photo-logo {
+    left: 12px;
+    position: fixed;
+    top: 12px;
+    width: 50px;
+}
+#header .photo-logo svg {
+    fill: #fff;
+    height: 30px;
+    width: 30px;
+}
+.greyAwning {
+	top: 0!important;
+}
+.menu ul {
+	position: fixed !important;
+    top: 0;
+}
+.menu .white a {
+	font-size:.7em;
+}
+#header ul li {
+    padding: 8px 15px 0;
+}
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 568px) {
+.photo-land-text .h2-48 {
+    font-size: 2em;
+}
+.photo-land-text .h5 {
+    font-size: 1em;
+}
+}
+@media only screen and (max-width: 414px) {
+.land-text {
+    display: block;
+    padding-top: 32%;
+    vertical-align: middle;
+}
+.land {
+    min-height: 500px;
+}
+.land-text {
+    padding-top: 58%;
+}
+
+
+}

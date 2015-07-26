@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*****************************************************/
+/* About CSS */
+/*****************************************************/
+
+.photo-header {
+	background: none repeat scroll 0 0 #fff;
+	font-family: "Raleway",sans-serif;
+	left: 0;
+	padding: 3%;
+	position: relative;
+	text-transform: uppercase;
+	top: 0;
+	transition: padding 0.3s ease 0s;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.photo-nav > a {
+	display: inline-block;
+	font-size: 1.5em;
+	line-height: 70px;
+	padding: 0 2%;
+	text-transform: capitalize;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.photo-header.short {
+	padding: 2% 0!important;
+	position: fixed;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.photo-header.short .photo-nav > a {
+	font-size: 1.3em;
+	line-height: 35px;
+	padding: 0 1%;
+	text-transform: capitalize;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.photo-header.short img {
+	width: 35px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.photo-about {
+	padding: 6% 0 3%;
+}
+
+.photo-about.long {
+	padding: 15% 0 3% 0;
+}
+
+.photography-image {
+	width: 100%;
+}
+
+.address .footer-head {
+	color: #000;
+	font-weight: 400;
+	padding-bottom: 3%;
+	text-transform: capitalize;
+}
+
+.photo-about .text {
+	line-height: 37px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.about-footer {
+		padding: 6% 0 4% 0;
+	}
+}
