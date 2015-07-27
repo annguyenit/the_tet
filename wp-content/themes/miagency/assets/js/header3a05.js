@@ -3,8 +3,8 @@
         $('.link-menu').click(function () {
             $(".link-menu").toggleClass("minus");
         });
-//        $("#header .menu .black").clone().removeClass("black").addClass("white").insertAfter($("#header .menu .black"));
-//        $(" .menu .black").clone().removeClass("black").addClass("nav navbar-nav").appendTo($(".navbar-collapse"));
+        $("#header .menu .black").clone().removeClass("black").addClass("white").insertAfter($("#header .menu .black"));
+        $(" .menu .black").clone().removeClass("black").addClass("nav navbar-nav").appendTo($(".navbar-collapse"));
 
 
         $(".workItem").each(function () {
@@ -82,12 +82,10 @@
 
     function scrolled() {
         var ST = parseInt($(window).scrollTop(), 10);
-        if (ST > 555) {
+        if (ST > $('#lading-page').outerHeight() - 50) {
             $("#header").addClass('fix-to-top');
-            $("#about-tet").css('padding-top', '79px');
         } else {
             $("#header").removeClass('fix-to-top');
-            $("#about-tet").css('padding-top', '0px');
         }
     }
     

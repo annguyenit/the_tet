@@ -1,10 +1,17 @@
 @charset "utf-8";
-.fix-to-top{
+
+#header-wraper .fix-to-top{
     position: fixed;
     top: 0px;
     bottom: auto !important;
 }
+#lading-page {
+    height: 95vh;
+    min-height: 95vh;
+}
 #header {
+    position: absolute;
+    bottom: 0px;
     background-color: #464646;
     min-height: 70px;
     padding: 0 100px;
@@ -35,8 +42,9 @@
 }
 
 .arrow-scrolldown {
-    padding-bottom: 85px; 
-    margin-top: 50px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
 }
 
 .intro-para-text {
