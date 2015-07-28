@@ -41,7 +41,15 @@
     top: 20px;
     width: 143px;
 }
-
+@media (max-width: 970px) {
+    #header {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+    #header .logo {
+        left: 0;
+    }
+}
 .arrow-scrolldown {
     position: absolute;
     top: 75%;
