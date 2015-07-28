@@ -8,6 +8,7 @@
 #lading-page {
     height: 95vh;
     min-height: 95vh;
+    position: relative;
 }
 #header {
     position: absolute;
@@ -43,7 +44,7 @@
 
 .arrow-scrolldown {
     position: absolute;
-    top: 100%;
+    top: 75%;
     left: 50%;
 }
 
@@ -213,7 +214,7 @@ display: block; /* I added this line */
 
 /* contact block */
 #contact {
-    
+
 }
 
 #contact .wpcf7-form input[type="text"], .wpcf7-form textarea, .wpcf7-form input[type="email"] {
