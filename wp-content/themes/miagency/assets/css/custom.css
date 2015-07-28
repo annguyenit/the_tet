@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'flexslider-icon';
+    src:url('../fonts/webfonts/flexslider-icon.eot');
+    src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
+            url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
+            url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #header-wraper .fix-to-top{
     position: fixed;
     top: 0px;
@@ -9,28 +20,71 @@
     height: 95vh;
     min-height: 95vh;
     position: relative;
+    background: url('images/homepage.jpeg') no-repeat center center #e61e2b;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 #header {
     position: absolute;
     bottom: 0px;
     background-color: #464646;
     min-height: 70px;
-    padding: 0 100px;
+    padding: 0 50px;
 }
 #header ul li {
-    padding: 20px 15px 0;
+    padding: 20px 10px 0;
 }
 #header ul.black li a {
     color: #fff;
 }
-#header ul.black li a:hover, #header ul.black li a:active {
-    color: red;
+.active, #header ul.black li a:hover, #header ul.black li a:active {
+    color: red !important;
 }
-.scroll-down-arrow {
-    margin-top: 10px;
-    height: 33px;
-    width: 33px;
+.scrolldown{
+    font-size: 38px;
+    color: #fff;
 }
+
+/* START: Replace Menu responsive */
+.logo-small {    
+    background: url("images/logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 11px;
+    min-height: 31px;
+    min-width: 143px;
+}
+
+@media only screen and (max-width: 767px) {
+    .small-header {
+        display: block;
+        position: fixed;
+        background: none repeat scroll 0 0 #464646;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+}
+
+.navbar-collapse {
+    max-height: 340px;
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 0px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -webkit-overflow-scrolling: touch;
+}
+
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{
+    color: red;	
+}
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 0 0 rgba(255,255,255,.25);
+}
+/* END: Replace Menu responsive */
 
 #header .logo {
     background-size: contain;
@@ -50,10 +104,13 @@
         left: 0;
     }
 }
-.arrow-scrolldown {
+
+.wrapper-scrolldown {
     position: absolute;
     top: 75%;
     left: 50%;
+    position: relative;
+    margin-top: -100px;
 }
 
 .intro-para-text {
@@ -66,17 +123,6 @@
 #about-tet .about-intro-head {
     color: #fff;
     padding-bottom: 35px;
-}
-/* flex slider about */
-@font-face {
-    font-family: 'flexslider-icon';
-    src:url('../fonts/webfonts/flexslider-icon.eot');
-    src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
-            url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
-            url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* about slider */
@@ -96,7 +142,6 @@ display: block; /* I added this line */
 
 #about-tet .flex-direction-nav .flex-next { right: 0 !important; margin-right: -30px; opacity: 1 !important; }
 #about-tet .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
-//#about-tet .flexslider { width: 90%; margin: 0 auto; }
 #about-tet .flex-direction-nav a:before {
     //background-image: url('images/nav-prev.png');
     font-family: "flexslider-icon";

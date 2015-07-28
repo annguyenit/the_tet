@@ -107,6 +107,43 @@
             adjustStyle($(this).width());
         });
     });
+    
+    
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('.wrapper-scrolldown a').bind('click', function(event) {
+            $('html, body').stop().animate({
+                scrollTop: $('#about-tet').offset().top - 50
+            }, 800, 'easeInOutExpo');
+            event.preventDefault();
+        });
+        
+        $('#menu-mainmenu li a').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 50
+            }, 800, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+    
+    $(window).scroll(function() {
+        var windscroll = $(window).scrollTop();
+        if (windscroll >= 100) {
+            $('#wrapper section').each(function(i) {
+                $that = $(this);
+                if ($that.position().top <= windscroll - 20) {                    
+                    $('#menu-mainmenu li a.active').removeClass('active');
+                    $('#menu-mainmenu li a').addClass('active');
+                }
+                
+            });
+        } else {
+            $('#menu-mainmenu li a.active').removeClass('active');
+            $('#menu-mainmenu li a:first').addClass('active');
+        }
 
+    }).scroll();
+    
 
 }(jQuery);
