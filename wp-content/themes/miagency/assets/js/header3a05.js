@@ -146,7 +146,9 @@
         $('#menu-mainmenu a[href^="#"]').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            //alert(refElement.position().top);
+            var refPost = refElement.position().top - 50;
+            if (refPost <= scrollPos && refPost + refElement.height() > scrollPos) {
                 $('#menu-mainmenu ul li a').removeClass("active");
                 currLink.addClass("active");
             } else {

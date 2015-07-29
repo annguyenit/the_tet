@@ -51,16 +51,32 @@
     position: fixed;
     top: 0px;
     bottom: auto !important;
+    z-index: 1001;
 }
 #lading-page {
     height: 95vh;
     min-height: 95vh;
     position: relative;
-    background: url('images/homepage.jpeg') no-repeat center center #e61e2b;
+    background: url(images/homepage.jpeg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   #lading-page {
+        height: 610px;
+        min-height: 610px;
+        position: relative;
+        background: url(images/homepage.jpeg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
 #header {
     position: absolute;
     bottom: 0px;
