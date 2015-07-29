@@ -113,7 +113,7 @@
     $(function() {
         $('.wrapper-scrolldown a').bind('click', function(event) {
             $('html, body').stop().animate({
-                scrollTop: $('#about-tet').offset().top - 50
+                scrollTop: $('#about-tet').offset().top
             }, 800, 'easeInOutExpo');
             event.preventDefault();
         });        
@@ -134,7 +134,7 @@
             
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 50
+                scrollTop: $($anchor.attr('href')).offset().top
             }, 800, 'easeInOutExpo', function () {
                 $(document).on("scroll", onScroll);
             });
@@ -146,8 +146,7 @@
         $('#menu-mainmenu a[href^="#"]').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            //alert(refElement.position().top);
-            var refPost = refElement.position().top - 50;
+            var refPost = refElement.position().top;
             if (refPost <= scrollPos && refPost + refElement.height() > scrollPos) {
                 $('#menu-mainmenu ul li a').removeClass("active");
                 currLink.addClass("active");
