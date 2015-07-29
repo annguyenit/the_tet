@@ -46,7 +46,9 @@
        url('fonts/roboto/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
        url('fonts/roboto/Roboto-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
 }
-
+#wrapper {
+    padding-right: 15px;
+}
 #header-wraper .fix-to-top{
     position: fixed;
     top: 0px;
