@@ -116,34 +116,43 @@
                 scrollTop: $('#about-tet').offset().top - 50
             }, 800, 'easeInOutExpo');
             event.preventDefault();
-        });
-        
-        $('#menu-mainmenu li a').bind('click', function(event) {
+        });        
+    });
+
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        //smoothscroll
+        $('#menu-mainmenu a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('#menu-mainmenu a').each(function () {
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+            
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 50
-            }, 800, 'easeInOutExpo');
-            event.preventDefault();
+            }, 800, 'easeInOutExpo', function () {
+                $(document).on("scroll", onScroll);
+            });
         });
     });
-    
-    $(window).scroll(function() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 100) {
-            $('#wrapper section').each(function(i) {
-                $that = $(this);
-                if ($that.position().top <= windscroll - 20) {                    
-                    $('#menu-mainmenu li a.active').removeClass('active');
-                    $('#menu-mainmenu li a').addClass('active');
-                }
-                
-            });
-        } else {
-            $('#menu-mainmenu li a.active').removeClass('active');
-            $('#menu-mainmenu li a:first').addClass('active');
-        }
 
-    }).scroll();
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('#menu-mainmenu a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#menu-mainmenu ul li a').removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
+            }
+        });
+    }
     
-
 }(jQuery);
