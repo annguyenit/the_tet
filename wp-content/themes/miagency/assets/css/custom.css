@@ -11,6 +11,42 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('fonts/roboto/Roboto-Black.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Black.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Black.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('fonts/roboto/Roboto-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('fonts/roboto/Roboto-Light.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Light.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('fonts/roboto/Roboto-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 #header-wraper .fix-to-top{
     position: fixed;
     top: 0px;
@@ -45,7 +81,9 @@
     font-size: 38px;
     color: #fff;
 }
-
+ul#menu-mainmenu {
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif; 
+}
 ul#menu-mainmenu li.flags {
     position: relative;
     min-width: 90px;
@@ -60,6 +98,12 @@ ul#menu-mainmenu li.flags a.flag-vi {
     position: absolute;
     top: 22px;
     right: 10px
+}
+
+.top-bar {
+    width: 100%;
+    float: none;
+    text-align: center;
 }
 
 /* START: Replace Menu responsive */
@@ -81,6 +125,23 @@ ul#menu-mainmenu li.flags a.flag-vi {
         top: 0;
         width: 100%;
         z-index: 9999;
+    }
+    
+    ul#menu-mainmenu li.flags {
+        display: none;
+    }
+    
+    .flags-mobile {
+        position: relative;
+        float: right;
+        margin-right: 5px;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
     }
 }
 
@@ -127,16 +188,13 @@ ul#menu-mainmenu li.flags a.flag-vi {
     margin-top: -100px;
 }
 
-.intro-para-text {
-    color: #000;
-}
-
 #about-tet {
     background-color: #e61e2b;
 }
 #about-tet .about-intro-head {
     color: #fff;
     padding-bottom: 35px;
+    font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
 }
 
 /* about slider */
@@ -147,11 +205,12 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 #about-tet .flexslider .slides p {
     color: #fff !important;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
 }
 
 #about-tet .flexslider .flex-direction-nav a,
 #about-tet .flexslider .flex-direction-nav a {
-display: block; /* I added this line */
+    display: block; /* I added this line */
 }
 
 #about-tet .flex-direction-nav .flex-next { right: 0 !important; margin-right: -30px; opacity: 1 !important; }
@@ -205,6 +264,10 @@ display: block; /* I added this line */
     background-color: #fff;
 }
 
+#question .intro-text-head {
+    font-family:  'Roboto-Bold', 'Source Sans Pro', sans-serif;
+}
+
 /* question slider */
 #question .flexslider {
     padding: 10% 0;
@@ -216,6 +279,7 @@ display: block; /* I added this line */
     color: #000 !important;
     font-size: 3em;
     line-height: 1.2em;
+    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
 }
 
 #question .flexslider .flex-direction-nav a,
@@ -273,15 +337,17 @@ display: block; /* I added this line */
     color: #fff;
     padding-top: 50%;
     padding-bottom: 20px;
+    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
 }
 #project .proj-text-view {
     color: #fff;
     line-height: 1.2em;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
 }
 
 /* contact block */
-#contact {
-
+#contact .about-intro-head {
+    font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
 }
 
 #contact .wpcf7-form input[type="text"], .wpcf7-form textarea, .wpcf7-form input[type="email"] {
@@ -292,7 +358,7 @@ display: block; /* I added this line */
     text-align: left;
     width: 100%;
     color: rgb(0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
     font-size: 1.35em;
     font-weight: 300;
     border-radius: 0px;
@@ -304,13 +370,15 @@ display: block; /* I added this line */
 #contact .wpcf7-form textarea {
     height: 10em;
 }
+@media only screen and (min-width: 990px) {
+    #contact .wpcf7-form .name {
+        padding-right: 5px;
+    }
+    #contact .wpcf7-form .phone {
+        padding-left: 5px;
+    }
+}
 
-#contact .wpcf7-form .name {
-    padding-right: 5px;
-}
-#contact .wpcf7-form .phone {
-    padding-left: 5px;
-}
 
 #contact .wpcf7-form .wpcf7-submit, .form-submit #submit_btn {
     background: #464646 !important;
@@ -330,4 +398,5 @@ display: block; /* I added this line */
     transition: all 0.2s ease 0s;
     -webkit-transition: all 0.2s ease 0s;
     z-index: 1;
+    font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
 }
