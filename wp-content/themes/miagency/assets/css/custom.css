@@ -346,14 +346,14 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 
 /* project block */
-#project .proj-text-head {
+.project-block .proj-text-head {
     font-size: 4.5em;
     color: #fff;
     padding-top: 50%;
     padding-bottom: 20px;
     font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
 }
-#project .proj-text-view {
+.project-block .proj-text-view {
     color: #fff;
     line-height: 1.2em;
     font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
@@ -424,4 +424,46 @@ ul#menu-mainmenu li.flags a.flag-vi {
 }
 .project {
   min-height: auto !important;
+}
+.section-fixed {
+  width: 100%;
+  position: fixed !important;
+  display: block;  
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+}
+.section-fixed.red {
+  background-color: red;
+}
+.section-fixed.blue {
+  background-color: blue;
+}
+.section-fixed.orange {
+  background-color: orange;
+}
+.section-fixed.yellow {
+  background-color: yellow;
+}
+.section-fixed.green {
+  background-color: green;
+}
+.section-gap {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  height: 100vh;
+}
+.section-gap.section-anchor {
+  visibility: hidden;
+  height: 95vh;
+}
+#wrap-question {
+  background-color: #ffffff;
+}
+#wrap-about-tet {
+  background-color: #e61e2b;
+}
+#contact > .inner{
+  background-color: #ffffff;
 }
