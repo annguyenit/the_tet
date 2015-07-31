@@ -31,7 +31,30 @@
     <body>
 
             <!-- PROJECT SECTION -->
-            <section id="project-3" class="project-block project section-fixed green"  data-top="max-height:100vh;" data-anchor-target="#out-3">
+            <section id="project-4" class="project-block project section-fixed blue"  data-top="max-height:100vh;" data-anchor-target="#out-4">
+                <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
+                    <div class="col-lg-5 col-md-7 col-sm-7">
+                        <h1 class="proj-text-head">PROJECT 4</h1>
+                        <h5 class="proj-text-view">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute ire dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+                        </h5>
+                    </div>
+
+                    <div class="col-lg-7 col-md-7 col-sm-7 home1-intro-text-pos">
+                        <ul class="rslides" id="slider4">
+                            <li class="video-slide"><iframe src="http://www.youtube.com/embed/0o7zR9nwR5U" frameborder="0" width="100%" height="370px" allowfullscreen></iframe></li>
+                            <li class="video-slide"><iframe src="http://www.youtube.com/embed/E2ppCfWK5SM" frameborder="0" width="100%" height="370px" allowfullscreen></iframe></li>
+                            <li class="video-slide"><iframe src="http://www.youtube.com/embed/o0PAmBwO1uQ" frameborder="0" width="100%" height="370px" allowfullscreen></iframe></li>
+                        </ul>
+                        <ul id="slider4-pager">
+                            <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/00_thumb.jpg" alt="" width="100"></a></li>
+                            <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/01_thumb.jpg" alt="" width="100"></a></li>
+                            <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/02_thumb.jpg" alt="" width="100"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="project-3" class="project-block project section-fixed green" data-top-bottom="max-height:0vh;"  data-top="max-height:100vh;" data-anchor-target="#out-3">
                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
                     <div class="col-lg-5 col-md-7 col-sm-7">
                         <h1 class="proj-text-head">PROJECT 3</h1>
@@ -423,6 +446,7 @@
                             <section id="out-1" class="section-gap"></section>
                             <section id="out-2" class="section-gap"></section>
                             <section id="out-3" class="section-gap"></section>
+                            <section id="out-4" class="section-gap"></section>
 
                         </div>
                     </div>
@@ -507,9 +531,9 @@
                             </div>
                         </div>
                     </section>
-                </section>        
-                <section class="row project-block-wrapper">
-                    <section id="project-5" class="project-block project blue row last-project" >
+                </section>
+                <section class="row project-block-wrapper mobile-only">
+                    <section id="project-4-d" class="project-block project blue row last-project" >
                         <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
                             <div class="col-lg-5 col-md-7 col-sm-7">
                                 <h1 class="proj-text-head">PROJECT 4</h1>
@@ -520,12 +544,12 @@
 
                             <div class="col-lg-7 col-md-7 col-sm-7 home1-intro-text-pos">
                                 <!-- Insert to your webpage where you want to display the slider -->
-                                <ul class="rslides" id="slider4">
+                                <ul class="rslides" id="slider4-d">
                                     <li class="video-slide"><iframe src="http://www.youtube.com/embed/0o7zR9nwR5U" frameborder="0" width="100%" height="370px" allowfullscreen></iframe></li>
                                     <li class="video-slide"><iframe src="http://www.youtube.com/embed/E2ppCfWK5SM" frameborder="0" width="100%" height="370px" allowfullscreen></iframe></li>
                                     <li class="video-slide"><iframe src="http://www.youtube.com/embed/o0PAmBwO1uQ" frameborder="0" width="100%" height="370px" allowfullscreen></iframe></li>
                                 </ul>
-                                <ul id="slider4-pager">
+                                <ul id="slider4-d-pager">
                                     <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/00_thumb.jpg" alt="" width="100"></a></li>
                                     <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/01_thumb.jpg" alt="" width="100"></a></li>
                                     <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/02_thumb.jpg" alt="" width="100"></a></li>
@@ -534,7 +558,7 @@
                             </div>
                         </div>
                     </section>
-                </section>
+                </section> 
                 <section id="contact" class="row">
                     <div class="span12 col-md-12 column_first column_last no-padding inner">
                         <div class="span12 col-md-12 column_first column_last">
@@ -649,6 +673,7 @@
                 $('#about-tet .flexslider').flexslider({
                     smoothHeight: true,
                     animation: "fade",
+                    slideshow: false,
                     start: function (slider) {
                         $('body').removeClass('loading');
                     },
