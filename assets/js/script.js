@@ -4,11 +4,10 @@
     s = skrollr.init({
         forceHeight: false
     });
+  	$(window).on('resize', function() {
+  		s.refresh();
+  	});
+  } else {    
     $('body').addClass('mobile');
-  } else {
-    s = skrollr.init();
   }
-	$(window).on('resize', function() {
-		s.refresh();
-	});
 }(jQuery, window));
