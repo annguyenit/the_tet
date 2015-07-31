@@ -215,7 +215,9 @@ ul#menu-mainmenu li.flags a.flag-vi {
 #about-tet .flexslider {
     background-color: #e61e2b;
     border-color: #e61e2b;
-    overflow: hidden;
+    overflow: hidden;    
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #about-tet .flexslider .slides p {
@@ -228,8 +230,8 @@ ul#menu-mainmenu li.flags a.flag-vi {
     display: block; /* I added this line */
 }
 
-#about-tet .flex-direction-nav .flex-next { right: 0 !important; margin-right: -30px; opacity: 1 !important; }
-#about-tet .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
+#about-tet .flex-direction-nav .flex-next { right: 0 !important; opacity: 1 !important; }
+#about-tet .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; }
 #about-tet .flex-direction-nav a:before {
     //background-image: url('images/nav-prev.png');
     font-family: "flexslider-icon";
@@ -302,7 +304,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
     display: block; /* I added this line */
 }
 
-#question .flex-direction-nav .flex-next { right: 0 !important; margin-right: -30px; opacity: 1 !important; }
+#question .flex-direction-nav .flex-next { right: 0 !important; opacity: 1 !important; }
 #question .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
 #question .flex-direction-nav a:before {
     //background-image: url('images/nav-prev.png');

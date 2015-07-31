@@ -651,6 +651,9 @@
                     animation: "fade",
                     start: function (slider) {
                         $('body').removeClass('loading');
+                    },
+                    after: function() {
+                        skrollr.init().refresh();                        
                     }
                 });
                 // $('#question .flexslider').flexslider({
