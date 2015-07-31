@@ -215,6 +215,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 #about-tet .flexslider {
     background-color: #e61e2b;
     border-color: #e61e2b;
+    overflow: hidden;
 }
 
 #about-tet .flexslider .slides p {
@@ -464,7 +465,6 @@ ul#menu-mainmenu li.flags a.flag-vi {
 }*/
 #wrap-about-tet {
   background-color: #e61e2b;
-  min-height: 1842px;
 }
 #contact > .inner{
   background-color: #ffffff;

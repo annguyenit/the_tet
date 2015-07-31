@@ -360,7 +360,7 @@
                                                 <div class="align-left no-padding">
                                                     <h1 class="about-intro-head about-text-head">Tet – The Importance</h1>
                                                 </div>
-                                                <p class="p-24">
+                                                <p class="p-24 three-column">
                                                     But even as these sentiments change, Tet still remains a very dear festival to the Vietnamese young and old alike. When asked if
                                                     Tet and the western New Year were merged or if there would be no Tet anymore, Vietnamese were strongly against it – even
                                                     leading to a controversial debate earlier this year when prominent economists suggested this. There is a deep-rooted sense of
@@ -647,6 +647,7 @@
             // Can also be used with $(document).ready()
             $(window).load(function () {
                 $('#about-tet .flexslider').flexslider({
+                    smoothHeight: true,
                     animation: "fade",
                     start: function (slider) {
                         $('body').removeClass('loading');
