@@ -43,6 +43,19 @@ $(function () {
         prevText: '<i class="icon-chevron-left"></i>', // String: Text for the "previous" button
         nextText: '<i class="icon-chevron-right"></i>',
     });
+    for(var i = 1; i < 5; i++ ) {
+        $('#slider' + i + '-d').responsiveSlides({
+            manualControls: '#slider' + i +'-d' + '-pager',
+            maxwidth: 670,
+            auto: false,
+            nav: true,
+            pause: true,
+            speed: 500, // Integer: Speed of the transition, in milliseconds
+            timeout: 4000,
+            prevText: '<i class="icon-chevron-left"></i>', // String: Text for the "previous" button
+            nextText: '<i class="icon-chevron-right"></i>',
+        });        
+    }
 });
 
 $(function () {
