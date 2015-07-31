@@ -218,6 +218,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
     overflow: hidden;    
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 40px;
 }
 
 #about-tet .flexslider .slides p {
@@ -240,6 +241,9 @@ ul#menu-mainmenu li.flags a.flag-vi {
     content: '\f001';
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#about-tet .flex-control-paging {
+  bottom: 0;
 }
 #about-tet .flex-control-paging li a {
   width: 70px;
