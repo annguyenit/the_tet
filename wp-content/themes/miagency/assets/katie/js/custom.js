@@ -2,12 +2,12 @@
 //intro slider
 //	$('#carousel_fade_intro').carousel({
 //		interval: 2500,
-//		
+//
 //	})
 //	//works sliders
 //	$('#carousel_horizontal_slide, #carousel_vertical_slide, #carousel_fade_1, #carousel_fade_2').carousel({
 //		interval: false,
-//		
+//
 //	})
 
 $(function () {

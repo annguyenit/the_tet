@@ -423,29 +423,30 @@ ul#menu-mainmenu li.flags a.flag-vi {
   background-color: #e61e2b;
 }
 .project {
-  min-height: auto !important;
+  min-height: auto;
 }
 .section-fixed {
   width: 100%;
   position: fixed !important;
-  display: block;  
+  display: block;
   height: 100vh;
   overflow: hidden;
   top: 0;
+  z-index: 0;
 }
-.section-fixed.red {
+.red {
   background-color: red;
 }
-.section-fixed.blue {
+.blue {
   background-color: blue;
 }
-.section-fixed.orange {
+.orange {
   background-color: orange;
 }
-.section-fixed.yellow {
+.yellow {
   background-color: yellow;
 }
-.section-fixed.green {
+.green {
   background-color: green;
 }
 .section-gap {
@@ -492,7 +493,12 @@ ul#menu-mainmenu li.flags a.flag-vi {
   left: 0;
   position: fixed;
   text-align: center;
+  z-index: 1;
 }
 .question-block  .flex-control-nav li {
   display: inline-block;
+}
+.last-project {
+  position: relative;
+  min-height: 100vh;
 }

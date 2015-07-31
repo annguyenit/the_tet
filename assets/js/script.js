@@ -2,10 +2,10 @@
 	var list = {}
 	var getPro = function() {
 		var i = 0;
-		$('#project').find('.project').each(function() {	
+		$('#project').find('.project').each(function() {
 			var that = this;
 			list['project' + i] =  function() {
-				return $(that).offset().top;	
+				return $(that).offset().top;
 			}
 			i++;
 		});
