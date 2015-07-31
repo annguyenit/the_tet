@@ -524,12 +524,14 @@ ul#menu-mainmenu li.flags a.flag-vi {
 .list-question {
   padding-bottom: 23.5%;
 }
-.three-column {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
+@media (min-width: 992px) {
+  .three-column {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
 
-  -webkit-column-gap: 33.33%; /* Chrome, Safari, Opera */
-  -moz-column-gap: 33.33%; /* Firefox */
-  column-gap: 33.33%;
+    -webkit-column-gap: 33.33%; /* Chrome, Safari, Opera */
+    -moz-column-gap: 33.33%; /* Firefox */
+    column-gap: 33.33%;
+  }
 }
