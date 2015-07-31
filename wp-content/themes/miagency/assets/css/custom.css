@@ -454,6 +454,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
   width: 100%;
   background: transparent;
   height: 100vh;
+  pointer-events: none;
 }
 .section-gap.section-anchor {
   visibility: hidden;
@@ -493,7 +494,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
   left: 0;
   position: fixed;
   text-align: center;
-  z-index: 1;
+  z-index: 0;
 }
 .question-block  .flex-control-nav li {
   display: inline-block;
