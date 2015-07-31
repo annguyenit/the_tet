@@ -423,14 +423,6 @@ ul#menu-mainmenu li.flags a.flag-vi {
     z-index: 1;
     font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
 }
-.project-block-wrapper {
-  background: url(../css/images/bg-pro2.png) no-repeat fixed center center rgba(0, 0, 0, 0);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #e61e2b;
-}
 .project {
   min-height: auto;
 }
@@ -529,4 +521,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 }
 .list-question {
   padding-bottom: 23.5%;
+}
+.project-full {
+  position: relative;
 }
