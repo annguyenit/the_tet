@@ -1,5 +1,7 @@
 ;(function($, window, undefined) {
-	var s = skrollr.init();
+	var s = skrollr.init({
+		smoothScrolling: false
+	});
 	$(window).on('resize', function() {
 		s.refresh();
 	});
