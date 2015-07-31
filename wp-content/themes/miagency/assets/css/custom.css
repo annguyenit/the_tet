@@ -245,6 +245,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 #about-tet .flex-control-paging {
   bottom: 0;
   z-index: 2;
+  left: 0;
 }
 #about-tet .flex-control-paging li a {
   width: 70px;
