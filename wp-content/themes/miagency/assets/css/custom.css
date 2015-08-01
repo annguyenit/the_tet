@@ -530,3 +530,25 @@ ul#menu-mainmenu li.flags a.flag-vi {
 .list-question {
   padding-bottom: 23.5%;
 }
+#wrap-we-get-tet {
+  background-color: #fff;
+  padding-bottom: 75px;
+}
+#wrap-we-get-tet .we-get-tet-video {
+  min-height: 500px;
+  height: 500px;
+}
+.list-question-block-mobile {
+  background: #fff;
+}
+.list-question-outer {
+  padding-bottom: 10%;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
