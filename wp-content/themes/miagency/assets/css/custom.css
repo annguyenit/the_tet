@@ -507,6 +507,12 @@ ul#menu-mainmenu li.flags a.flag-vi {
 .green {
   background-color: green;
 }
+.color-green {
+    color: green;
+}
+.color-red {
+    color: red;
+}
 .section-gap {
   position: relative;
   width: 100%;

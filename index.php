@@ -1,3 +1,6 @@
+<?php 
+    require_once('contact_mailer.php');
+?>
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
     <head>
@@ -435,33 +438,48 @@
                             </section>
                             <!-- /LANDING SECTION --><section class="contacts">
                                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center"><div role="form" class="wpcf7" id="wpcf7-f91-p89-o1" lang="en-US" dir="ltr">
-                                        <div class="screen-reader-response"></div>
-                                        <form name="" action="contact_mailer.php" method="post" class="wpcf7-form" novalidate="novalidate">
+                                        <?php
+                                            if (isset($returnVal) && isset($returnVal->messages)) {
+                                                if ($returnVal->status == 'ok') {
+                                                    $color = 'color-green';
+                                                } else {
+                                                    $color = 'color-red';
+                                                }
+                                                
+                                                $messages = $returnVal->messages;
+                                                $message = $messages[0];
+                                        ?>
+                                                <div class="screen-reader-response <?php echo $color; ?>"><?php echo $message->message; ?></div> <br>
+                                        <?php
+                                            } // if
+                                        ?>
+                                        
+                                        <form name="" action="index.php#contact" method="post" class="wpcf7-form" novalidate="novalidate">
                                             <div class="contact-group">
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 name">
                                                     <span class="wpcf7-form-control-wrap">
-                                                        <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name *">
+                                                        <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name *" required>
                                                     </span>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 phone">
                                                     <span class="wpcf7-form-control-wrap">
-                                                        <input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone *">
+                                                        <input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone *" required>
                                                     </span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <span class="wpcf7-form-control-wrap">
-                                                    <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email *">
+                                                    <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email *" required>
                                                 </span>
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <span class="wpcf7-form-control-wrap">
-                                                    <textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message *"></textarea>
+                                                    <textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message *" required></textarea>
                                                 </span>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit submit_button btn-effect submit_btn source-font col-lg-4 col-md-4 col-sm-4 col-xs-12 align-center send-message" id="submit_btn">
+                                                <input type="submit" name="submit" value="send" class="wpcf7-form-control wpcf7-submit submit_button btn-effect submit_btn source-font col-lg-4 col-md-4 col-sm-4 col-xs-12 align-center send-message" id="submit_btn">
                                                 <img class="ajax-loader" src="http://demo.nrgthemes.com/projects/miagency/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
