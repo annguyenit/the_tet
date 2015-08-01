@@ -67,6 +67,28 @@
     width: 100%;
 }
 
+#lading-page .bg-lading-page {
+    text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+    #lading-page img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #lading-page img {
+        width: 70%;
+    }
+}
+
+_::-webkit-filter, :root #lading-page { 
+    position: relative;
+    background-color: #ec3527;
+    padding-top:100px;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     #lading-page {
         position: relative;
@@ -202,11 +224,37 @@ ul#menu-mainmenu li.flags a.flag-vi {
     margin-top: -100px;
 }
 
+@media (max-width: 767px) {
+    .wrapper-scrolldown {
+        display: none;
+    }
+    
+    #lading-page {
+        min-height: 100vh;
+    }
+}
+
 #about-tet {
     background-color: #e61e2b;
 }
 #about-tet .about-intro-head {
     color: #fff;
+    padding-bottom: 35px;
+    font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+}
+
+#wrap-we-get-tet {
+    background-color: #fff;
+    padding-bottom: 75px;
+}
+
+#wrap-we-get-tet .we-get-tet-video {
+    min-height: 500px;
+    height: 500px;  
+}
+
+#wrap-we-get-tet .about-intro-head {
+    color: #000;
     padding-bottom: 35px;
     font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
 }
@@ -293,7 +341,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 /* question slider */
 #question .flexslider {
-    padding: 10% 0;
+    padding: 5% 0;
     background-color: #fff;
     border-color: #fff;
 }
@@ -431,7 +479,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
     font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
 }
 .project {
-  min-height: auto;
+//  min-height: inherit;
 }
 .section-fixed {
   width: 100%;
@@ -506,4 +554,10 @@ ul#menu-mainmenu li.flags a.flag-vi {
 .fixed-control.flex-control-nav li {
   display: block;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 736px) {
+    #contact .into-text-pos {
+        padding-top: 7.5%;
+    }
 }

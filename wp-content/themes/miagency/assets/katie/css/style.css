@@ -92,12 +92,12 @@ a.rslides_nav:active {
 
 
 a.rslides_nav.prev {
-	top: 45%;
+	top: 35%;
 	left: 15px;
 }
 
 a.rslides_nav.next {
-	top: 45%;
+	top: 35%;
 	right: 15px;
 }
 
