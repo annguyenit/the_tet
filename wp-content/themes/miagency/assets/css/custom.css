@@ -355,12 +355,19 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 
 /* project block */
+.project-block {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
 .project-block .proj-text-head {
     font-size: 4.5em;
     color: #fff;
-    padding-top: 50%;
+    padding-top: 0;
     padding-bottom: 20px;
     font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
+}
+.project-block .home1-intro-text-pos{
+    padding-top: 0;
 }
 .project-block .proj-text-view {
     color: #fff;
@@ -499,29 +506,4 @@ ul#menu-mainmenu li.flags a.flag-vi {
 .fixed-control.flex-control-nav li {
   display: block;
   margin-top: 10px;
-}
-.last-project {
-  position: relative;
-  min-height: 100vh;
-}
-#project, #question {
-  pointer-events: none;
-}
-.mobile #project, .mobile #question {
-  pointer-events: auto;
-}  
-.mobile-only {
-  display: none;
-}
-.mobile .section-gap{
-  display: none;
-}
-.mobile .mobile-only {
-  display: block;
-}
-.list-question {
-  padding-bottom: 23.5%;
-}
-.project-full {
-  position: relative;
 }
