@@ -1,6 +1,7 @@
 ;(function($, window, undefined) {
-  var s;
-  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+  var s,
+  isMobile = (/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera);
+  if(!isMobile){
     s = skrollr.init({
         forceHeight: false
     });
@@ -10,4 +11,18 @@
   } else {    
     $('body').addClass('mobile');
   }
+  $('#about-tet .flexslider').flexslider({
+      smoothHeight: true,
+      animation: "fade",
+      slideshow: false,
+      start: function (slider) {
+          $('body').removeClass('loading');
+      },
+      after: function() {
+        if(!isMobile) {
+          s.refresh();         
+        }
+      }
+  });
+  s.refresh(); 
 }(jQuery, window));

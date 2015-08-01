@@ -669,27 +669,6 @@
         <script src="assets/js/script.js"></script>
         <script>
             // Can also be used with $(document).ready()
-            $(window).load(function () {
-                $('#about-tet .flexslider').flexslider({
-                    smoothHeight: true,
-                    animation: "fade",
-                    slideshow: false,
-                    start: function (slider) {
-                        $('body').removeClass('loading');
-                    },
-                    after: function() {
-                        skrollr.init().refresh();                        
-                    }
-                });
-                // $('#question .flexslider').flexslider({
-                //     animation: "fade",
-                //     direction: "vertical",
-                //     animationLoop: false,
-                //     directionNav: false,
-                //     start: function (slider) {
-                //         $('body').removeClass('loading');
-                //     }
-            });
         </script>
     </body>
 </html>

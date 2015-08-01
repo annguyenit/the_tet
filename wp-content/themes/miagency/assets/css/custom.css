@@ -432,7 +432,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
   background-color: #e61e2b;
 }
 .project {
-  min-height: auto;
+  min-height: auto !important;
 }
 .section-fixed {
   width: 100%;
