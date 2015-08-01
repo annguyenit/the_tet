@@ -119,6 +119,7 @@ _::-webkit-filter, :root #lading-page {
 }
 ul#menu-mainmenu {
     font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+    font-size: 16px;
 }
 ul#menu-mainmenu li.flags {
     position: relative;
@@ -341,7 +342,8 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 /* question slider */
 #question .flexslider {
-    padding: 5% 0;
+    /*padding: 5% 0;*/
+    padding: 0  0 5% 0;
     background-color: #fff;
     border-color: #fff;
 }
@@ -539,7 +541,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
   font-size: 3em;
   line-height: 1.2em;
   font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
-  padding-top: 8.5%;
+  padding-top: 5.5%;
 }
 .fixed-control.flex-control-nav {
   position: fixed;
