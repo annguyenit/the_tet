@@ -59,7 +59,7 @@
     height: 95vh;
     min-height: 95vh;
     position: relative;
-    background-color: #ec3527;
+    background-color: #e61e2b;
     padding-top:100px;
 }
 
@@ -260,6 +260,13 @@ ul#menu-mainmenu li.flags a.flag-vi {
     font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
 }
 
+.contact-intro-head {
+	color: #FFF;
+	padding-bottom: 20px;
+	font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+	font-size: 3em;
+}
+
 /* about slider */
 #about-tet .flexslider {
     background-color: #e61e2b;
@@ -272,6 +279,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 #about-tet .flexslider .slides p {
     color: #fff !important;
     font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+	font-size:1.3em;
     margin-bottom: 40px;
 }
 
@@ -343,7 +351,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 /* question slider */
 #question .flexslider {
     /*padding: 5% 0;*/
-    padding: 0  0 5% 0;
+    padding: 0 0;
     background-color: #fff;
     border-color: #fff;
 }
@@ -425,6 +433,27 @@ ul#menu-mainmenu li.flags a.flag-vi {
     font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
 }
 
+.project-block .proj-text-head-white {
+    font-size: 4.5em;
+    color: #333;
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
+}
+
+.tet-view {
+    color: #333;
+    line-height: 1.2em;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+	font-size:1.4em;
+}
+
+.project-block .proj-text-view-white {
+    color: #333;
+    line-height: 1.2em;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+}
+
 /* contact block */
 #contact .about-intro-head {
     font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
@@ -461,13 +490,13 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 
 #contact .wpcf7-form .wpcf7-submit, .form-submit #submit_btn {
-    background: #464646 !important;
-    color: #fff;
+    background: #fff !important;
+    color: #333;
 }
 
 #contact .wpcf7-form .btn-effect {
-    border: 2px solid #464646;
-    color: #fff;
+    border: 2px solid #fff;
+    color: #333;
     cursor: pointer;
     display: block;
     font-size: 1.125em;
@@ -493,7 +522,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
   z-index: 0;
 }
 .red {
-  background-color: red;
+  background-color:#e61e2b;
 }
 .blue {
   background-color: blue;
@@ -511,7 +540,10 @@ ul#menu-mainmenu li.flags a.flag-vi {
     color: green;
 }
 .color-red {
-    color: red;
+    color: #e61e2b;
+}
+.color-gray {
+    color:#333;
 }
 .section-gap {
   position: relative;
@@ -530,17 +562,17 @@ ul#menu-mainmenu li.flags a.flag-vi {
   background-color: #e61e2b;
 }
 #contact > .inner{
-  background-color: #ffffff;
+  background-color: #464646;
 }
 .question-block {
   background: #ffffff;
 }
 .question-block h3 {
-  font-weight: bold;
-  font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
-  text-transform: capitalize;
-  font-size: 1.87em;
-  padding-top: 8.5%;
+	font-weight: bold;
+	font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+	text-transform: capitalize;
+	font-size: 1.87em;
+	padding-top: 5%;
 }
 .question-block p {
   color: #000 !important;
@@ -568,4 +600,15 @@ ul#menu-mainmenu li.flags a.flag-vi {
     #contact .into-text-pos {
         padding-top: 7.5%;
     }
+}
+
+
+
+/*HH update*/
+#reviews-slider li {
+  cursor: pointer;
+}
+
+#reviews-slider .flex-active-slide {
+  color: red;
 }
