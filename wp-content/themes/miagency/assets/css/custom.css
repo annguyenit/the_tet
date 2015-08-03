@@ -1,527 +1,650 @@
-@charset "utf-8";
-
-@font-face {
-    font-family: 'flexslider-icon';
-    src:url('../fonts/webfonts/flexslider-icon.eot');
-    src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
-            url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
-            url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto-Black';
-  src: url('fonts/roboto/Roboto-Black.eot'); /* IE9 Compat Modes */
-  src: url('fonts/roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/roboto/Roboto-Black.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto/Roboto-Black.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/roboto/Roboto-Black.ttf')  format('truetype') /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'Roboto-Bold';
-  src: url('fonts/roboto/Roboto-Bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/roboto/Roboto-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto/Roboto-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/roboto/Roboto-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'Roboto-Light';
-  src: url('fonts/roboto/Roboto-Light.eot'); /* IE9 Compat Modes */
-  src: url('fonts/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/roboto/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/roboto/Roboto-Light.ttf')  format('truetype') /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('fonts/roboto/Roboto-Regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/roboto/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/roboto/Roboto-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
-}
-#wrapper {
-    //padding-right: 15px;
-}
-#header-wraper .fix-to-top{
-    position: fixed;
-    top: 0px;
-    bottom: auto !important;
-    z-index: 1001;
-}
-#lading-page {
-    height: 95vh;
-    min-height: 95vh;
-    position: relative;
-    background-color: #ec3527;
-    padding-top:100px;
-}
-
-#lading-page img {
-    width: 100%;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    #lading-page {
-        position: relative;
-        background-color: #ec3527;
-        padding-top:100px;
-    }
-}
-
-#header {
-    position: absolute;
-    bottom: 0px;
-    background-color: #464646;
-    min-height: 70px;
-    padding: 0 50px;
-}
-#header ul li {
-    padding: 20px 10px 0;
-}
-#header ul.black li a {
-    color: #fff;
-}
-.active, #header ul.black li a:hover, #header ul.black li a:active {
-    color: red !important;
-}
-.scrolldown{
-    font-size: 38px;
-    color: #fff;
-}
-ul#menu-mainmenu {
-    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
-}
-ul#menu-mainmenu li.flags {
-    position: relative;
-    min-width: 90px;
-}
-
-ul#menu-mainmenu li.flags a.flag-us {
-    position: absolute;
-    top: 22px;
-    right: 45px
-}
-ul#menu-mainmenu li.flags a.flag-vi {
-    position: absolute;
-    top: 22px;
-    right: 10px
-}
-
-.top-bar {
-    width: 100%;
-    float: none;
-    text-align: center;
-}
-
-/* START: Replace Menu responsive */
-.logo-small {
-    background: url("images/logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    float: left;
-    margin-left: 15px;
-    margin-top: 11px;
-    min-height: 31px;
-    min-width: 143px;
-}
-
-@media only screen and (max-width: 767px) {
-    .small-header {
-        display: block;
-        position: fixed;
-        background: none repeat scroll 0 0 #464646;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
-    }
-
-    ul#menu-mainmenu li.flags {
-        display: none;
-    }
-
-    .flags-mobile {
-        position: relative;
-        float: right;
-        margin-right: 5px;
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-    }
-}
-
-.navbar-collapse {
-    max-height: 340px;
-    overflow-x: visible;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-top: 0px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    -webkit-overflow-scrolling: touch;
-}
-
-.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{
-    color: red;
-}
-.navbar-brand, .navbar-nav>li>a {
-    text-shadow: 0 0 0 rgba(255,255,255,.25);
-}
-/* END: Replace Menu responsive */
-
-#header .logo {
-    background-size: contain;
-    display: block;
-    height: 31px;
-    left: 47px;
-    position: absolute;
-    top: 20px;
-    width: 143px;
-}
-@media (max-width: 970px) {
-    #header {
-        padding-left: 50px;
-        padding-right: 50px
-    }
-    #header .logo {
-        left: 0;
-    }
-}
-
-.wrapper-scrolldown {
-    position: absolute;
-    left: 50%;
-    margin-top: -100px;
-}
-
-#about-tet {
-    background-color: #e61e2b;
-}
-#about-tet .about-intro-head {
-    color: #fff;
-    padding-bottom: 35px;
-    font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
-}
-
-/* about slider */
-#about-tet .flexslider {
-    background-color: #e61e2b;
-    border-color: #e61e2b;
-    overflow: hidden;    
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#about-tet .flexslider .slides p {
-    color: #fff !important;
-    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
-    margin-bottom: 40px;
-}
-
-#about-tet .flexslider .flex-direction-nav a,
-#about-tet .flexslider .flex-direction-nav a {
-    display: block; /* I added this line */
-}
-
-#about-tet .flex-direction-nav .flex-next { right: 0 !important; opacity: 1 !important; }
-#about-tet .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; }
-#about-tet .flex-direction-nav a:before {
-    //background-image: url('images/nav-prev.png');
-    font-family: "flexslider-icon";
-    font-size: 25px;
-    display: inline-block;
-    content: '\f001';
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-}
-#about-tet .flex-control-paging {
-  bottom: 0;
-  z-index: 2;
-  left: 0;
-}
-#about-tet .flex-control-paging li a {
-  width: 70px;
-  height: 9px;
-  display: block;
-  background: #555555;
-  background: rgba(85, 85, 85, 1);
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-#about-tet .flex-control-paging li a:hover {
-  background: #555555;
-  background: rgba(0, 0, 0, 0.7);
-}
-#about-tet .flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(255, 255, 255, 0.9);
-  cursor: default;
-}
-
-#about-tet .flex-direction-nav a.flex-next:before {
-    content: '\f002';
-    //background-image: url('images/nav-next.png');
-}
-
-#about-tet .flex-direction-nav .flex-prev {
-    //left: -50px;
-}
-
-/* question block */
-#question {
-    background-color: #fff;
-}
-
-#question .intro-text-head {
-    font-family:  'Roboto-Bold', 'Source Sans Pro', sans-serif;
-}
-
-/* question slider */
-#question .flexslider {
-    padding: 10% 0;
-    background-color: #fff;
-    border-color: #fff;
-}
-
-#question .flexslider .slides p {
-    color: #000 !important;
-    font-size: 3em;
-    line-height: 1.2em;
-    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
-}
-
-#question .flexslider .flex-direction-nav a,
-#question .flexslider .flex-direction-nav a {
-    display: block; /* I added this line */
-}
-
-#question .flex-direction-nav .flex-next { right: 0 !important; opacity: 1 !important; }
-#question .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
-#question .flex-direction-nav a:before {
-    //background-image: url('images/nav-prev.png');
-    font-family: "flexslider-icon";
-    font-size: 25px;
-    display: inline-block;
-    content: '\f001';
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-}
-#question .flex-control-paging li a {
-  width: 15px;
-  height: 15px;
-  display: block;
-  background-color: #959595;
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-}
-#question .flex-control-paging li a:hover {
-  background: #707070;
-}
-#question .flex-control-paging li a.flex-active {
-  background: #c2c2c2;
-  cursor: default;
-}
-
-#question .flex-direction-nav a.flex-next:before {
-    content: '\f002';
-    //background-image: url('images/nav-next.png');
-}
-
-#question .flex-direction-nav .flex-prev {
-    //left: -50px;
-}
-
-
-/* project block */
-.project-block .proj-text-head {
-    font-size: 4.5em;
-    color: #fff;
-    padding-top: 50%;
-    padding-bottom: 20px;
-    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
-}
-.project-block .proj-text-view {
-    color: #fff;
-    line-height: 1.2em;
-    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
-}
-
-/* contact block */
-#contact .about-intro-head {
-    font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
-}
-
-#contact .wpcf7-form input[type="text"], .wpcf7-form textarea, .wpcf7-form input[type="email"] {
-    border: 1px solid #c7c7c7;
-    display: block;
-    height: 2.8em;
-    padding-left: 15px;
-    text-align: left;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
-    font-size: 1.35em;
-    font-weight: 300;
-    border-radius: 0px;
-    box-shadow: none;
-    margin-bottom: 10px;
-    -webkit-appearance: none;
-}
-
-#contact .wpcf7-form textarea {
-    height: 10em;
-}
-@media only screen and (min-width: 990px) {
-    #contact .wpcf7-form .name {
-        padding-right: 5px;
-    }
-    #contact .wpcf7-form .phone {
-        padding-left: 5px;
-    }
-}
-
-
-#contact .wpcf7-form .wpcf7-submit, .form-submit #submit_btn {
-    background: #464646 !important;
-    color: #fff;
-}
-
-#contact .wpcf7-form .btn-effect {
-    border: 2px solid #464646;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 1.125em;
-    padding: 12px 0;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-    z-index: 1;
-    font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
-}
-.project {
-  min-height: auto;
-}
-.section-fixed {
-  width: 100%;
-  position: fixed !important;
-  display: block;
-  height: 100vh;
-  overflow: hidden;
-  top: 0;
-  z-index: 0;
-}
-.red {
-  background-color: red;
-}
-.blue {
-  background-color: blue;
-}
-.orange {
-  background-color: orange;
-}
-.yellow {
-  background-color: yellow;
-}
-.green {
-  background-color: green;
-}
-.section-gap {
-  position: relative;
-  width: 100%;
-  background: transparent;
-  height: 100vh;
-}
-.section-gap.section-anchor {
-  visibility: hidden;
-  height: 100vh;
-}
-/*#wrap-question {
-  background-color: #ffffff;
-}*/
-#wrap-about-tet {
-  background-color: #e61e2b;
-}
-#contact > .inner{
-  background-color: #ffffff;
-}
-.question-block {
-  background: #ffffff;
-}
-.question-block h3 {
-  font-weight: bold;
-  font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
-  text-transform: capitalize;
-  font-size: 1.87em;
-  padding-top: 8.5%;
-}
-.question-block p {
-  color: #000 !important;
-  font-size: 3em;
-  line-height: 1.2em;
-  font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
-  padding-top: 8.5%;
-}
-.fixed-control.flex-control-nav {
-  position: fixed;
-  width: auto;
-  right: 10vw;
-  top: 0;
-  height: 60vh;
-  overflow: hidden;
-  padding-top: 40vh;
-  z-index: 0;
-}
-.fixed-control.flex-control-nav li {
-  display: block;
-  margin-top: 10px;
-}
-.last-project {
-  position: relative;
-  min-height: 100vh;
-}
-#project, #question {
-  pointer-events: none;
-}
-.mobile #project, .mobile #question {
-  pointer-events: auto;
-}  
-.mobile-only {
-  display: none;
-}
-.mobile .section-gap{
-  display: none;
-}
-.mobile .mobile-only {
-  display: block;
-}
-.list-question {
-  padding-bottom: 23.5%;
-}
-.project-full {
-  position: relative;
-}
+@charset "utf-8";
+
+@font-face {
+    font-family: 'flexslider-icon';
+    src:url('../fonts/webfonts/flexslider-icon.eot');
+    src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
+            url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
+            url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('fonts/roboto/Roboto-Black.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Black.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Black.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('fonts/roboto/Roboto-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('fonts/roboto/Roboto-Light.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Light.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('fonts/roboto/Roboto-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/roboto/Roboto-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+#wrapper {
+    //padding-right: 15px;
+}
+#header-wraper .fix-to-top{
+    position: fixed;
+    top: 0px;
+    bottom: auto !important;
+    z-index: 1001;
+}
+#lading-page {
+    height: 95vh;
+    min-height: 95vh;
+    position: relative;
+    background-color: #e61e2b;
+    padding-top:100px;
+}
+
+#lading-page img {
+    width: 100%;
+}
+
+#lading-page .bg-lading-page {
+    text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+    #lading-page img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #lading-page img {
+        width: 70%;
+    }
+}
+
+_::-webkit-filter, :root #lading-page { 
+    position: relative;
+    background-color: #ec3527;
+    padding-top:100px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #lading-page {
+        position: relative;
+        background-color: #ec3527;
+        padding-top:100px;
+    }
+}
+
+#header {
+    position: absolute;
+    bottom: 0px;
+    background-color: #464646;
+    min-height: 70px;
+    padding: 0 50px;
+}
+#header ul li {
+    padding: 20px 10px 0;
+}
+#header ul.black li a {
+    color: #fff;
+}
+.active, #header ul.black li a:hover, #header ul.black li a:active {
+    color: red !important;
+}
+.scrolldown{
+    font-size: 38px;
+    color: #fff;
+}
+ul#menu-mainmenu {
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+ul#menu-mainmenu li.flags {
+    position: relative;
+    min-width: 90px;
+}
+
+ul#menu-mainmenu li.flags a.flag-us {
+    position: absolute;
+    top: 22px;
+    right: 45px
+}
+ul#menu-mainmenu li.flags a.flag-vi {
+    position: absolute;
+    top: 22px;
+    right: 10px
+}
+
+.top-bar {
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+
+/* START: Replace Menu responsive */
+.logo-small {
+    background: url("images/logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 11px;
+    min-height: 31px;
+    min-width: 143px;
+}
+
+@media only screen and (max-width: 767px) {
+    .small-header {
+        display: block;
+        position: fixed;
+        background: none repeat scroll 0 0 #464646;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    ul#menu-mainmenu li.flags {
+        display: none;
+    }
+
+    .flags-mobile {
+        position: relative;
+        float: right;
+        margin-right: 5px;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+}
+
+.navbar-collapse {
+    max-height: 340px;
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 0px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -webkit-overflow-scrolling: touch;
+}
+
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{
+    color: red;
+}
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 0 0 rgba(255,255,255,.25);
+}
+/* END: Replace Menu responsive */
+
+#header .logo {
+    background-size: contain;
+    display: block;
+    height: 31px;
+    left: 47px;
+    position: absolute;
+    top: 20px;
+    width: 143px;
+}
+@media (max-width: 970px) {
+    #header {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+    #header .logo {
+        left: 0;
+    }
+}
+
+.wrapper-scrolldown {
+    position: absolute;
+    left: 50%;
+    margin-top: -100px;
+}
+
+@media (max-width: 767px) {
+    .wrapper-scrolldown {
+        display: none;
+    }
+    
+    #lading-page {
+        min-height: 100vh;
+    }
+}
+
+#about-tet {
+    background-color: #e61e2b;
+}
+#about-tet .about-intro-head {
+    color: #fff;
+    padding-bottom: 35px;
+    font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+}
+
+#wrap-we-get-tet {
+    background-color: #fff;
+    padding-bottom: 75px;
+}
+
+#wrap-we-get-tet .we-get-tet-video {
+    min-height: 500px;
+    height: 500px;  
+}
+
+#wrap-we-get-tet .about-intro-head {
+    color: #000;
+    padding-bottom: 35px;
+    font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+}
+
+.contact-intro-head {
+	color: #FFF;
+	padding-bottom: 20px;
+	font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+	font-size: 3em;
+}
+
+/* about slider */
+#about-tet .flexslider {
+    background-color: #e61e2b;
+    border-color: #e61e2b;
+    overflow: hidden;    
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#about-tet .flexslider .slides p {
+    color: #fff !important;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+	font-size:1.3em;
+    margin-bottom: 40px;
+}
+
+#about-tet .flexslider .flex-direction-nav a,
+#about-tet .flexslider .flex-direction-nav a {
+    display: block; /* I added this line */
+}
+
+#about-tet .flex-direction-nav .flex-next { right: 0 !important; opacity: 1 !important; }
+#about-tet .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; }
+#about-tet .flex-direction-nav a:before {
+    //background-image: url('images/nav-prev.png');
+    font-family: "flexslider-icon";
+    font-size: 25px;
+    display: inline-block;
+    content: '\f001';
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#about-tet .flex-control-paging {
+  bottom: 0;
+  z-index: 2;
+  left: 0;
+}
+#about-tet .flex-control-paging li a {
+  width: 70px;
+  height: 9px;
+  display: block;
+  background: #555555;
+  background: rgba(85, 85, 85, 1);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+#about-tet .flex-control-paging li a:hover {
+  background: #555555;
+  background: rgba(0, 0, 0, 0.7);
+}
+#about-tet .flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: default;
+}
+
+#about-tet .flex-direction-nav a.flex-next:before {
+    content: '\f002';
+    //background-image: url('images/nav-next.png');
+}
+
+#about-tet .flex-direction-nav .flex-prev {
+    //left: -50px;
+}
+
+/* question block */
+#question {
+    background-color: #fff;
+}
+
+#question .intro-text-head {
+    font-family:  'Roboto-Bold', 'Source Sans Pro', sans-serif;
+}
+
+/* question slider */
+#question .flexslider {
+    /*padding: 5% 0;*/
+    padding: 0 0;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+#question .flexslider .slides p {
+    color: #000 !important;
+    font-size: 3em;
+    line-height: 1.2em;
+    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
+}
+
+#question .flexslider .flex-direction-nav a,
+#question .flexslider .flex-direction-nav a {
+    display: block; /* I added this line */
+}
+
+#question .flex-direction-nav .flex-next { right: 0 !important; opacity: 1 !important; }
+#question .flex-direction-nav .flex-prev { left: 0 !important; opacity: 1 !important; margin-left: -30px; }
+#question .flex-direction-nav a:before {
+    //background-image: url('images/nav-prev.png');
+    font-family: "flexslider-icon";
+    font-size: 25px;
+    display: inline-block;
+    content: '\f001';
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#question .flex-control-paging li a {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: #959595;
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+#question .flex-control-paging li a:hover {
+  background: #707070;
+}
+#question .flex-control-paging li a.flex-active {
+  background: #c2c2c2;
+  cursor: default;
+}
+
+#question .flex-direction-nav a.flex-next:before {
+    content: '\f002';
+    //background-image: url('images/nav-next.png');
+}
+
+#question .flex-direction-nav .flex-prev {
+    //left: -50px;
+}
+
+#question #reviews-slider {
+    text-align: center;
+}
+
+#question #reviews-slider .slides {
+    padding-left: 40%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #question #reviews-slider .slides {
+        padding-left: 35%;
+    }
+} 
+
+@media only screen and (max-width: 767px) {
+    #question #reviews-slider .slides {
+        padding-left: 20%;
+    }
+} 
+
+@media only screen and (max-width: 464px) {
+    #question #reviews-slider .slides {
+        padding-left: 10%;
+    }
+    
+    #question #reviews-slider .slides li {
+        font-size: 15px !important;
+    }
+} 
+
+#question #reviews-slider .slides li {
+    width: 15px !important;
+    font-size: 25px;
+    padding: 0 15px;
+    color: #424242;
+}
+
+/* project block */
+.project-block {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.project-block .proj-text-head {
+    font-size: 4.5em;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
+}
+.project-block .home1-intro-text-pos{
+    padding-top: 0;
+}
+.project-block .proj-text-view {
+    color: #fff;
+    line-height: 1.2em;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+}
+
+.project-block .proj-text-head-white {
+    font-size: 4.5em;
+    color: #333;
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-family:  'Roboto-Black', 'Source Sans Pro', sans-serif;
+}
+
+.tet-view {
+    color: #333;
+    line-height: 1.2em;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+	font-size:1.4em;
+}
+
+.project-block .proj-text-view-white {
+    color: #333;
+    line-height: 1.2em;
+    font-family:  'Roboto-Regular', 'Source Sans Pro', sans-serif;
+}
+
+/* contact block */
+#contact .about-intro-head {
+    font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
+}
+
+#contact .wpcf7-form input[type="text"], .wpcf7-form textarea, .wpcf7-form input[type="email"] {
+    border: 1px solid #c7c7c7;
+    display: block;
+    height: 2.8em;
+    padding-left: 15px;
+    text-align: left;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
+    font-size: 1.35em;
+    font-weight: 300;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+}
+
+#contact .wpcf7-form textarea {
+    height: 10em;
+}
+@media only screen and (min-width: 990px) {
+    #contact .wpcf7-form .name {
+        padding-right: 5px;
+    }
+    #contact .wpcf7-form .phone {
+        padding-left: 5px;
+    }
+}
+
+
+#contact .wpcf7-form .wpcf7-submit, .form-submit #submit_btn {
+    background: #fff !important;
+    color: #333;
+}
+
+#contact .wpcf7-form .btn-effect {
+    border: 2px solid #fff;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 1.125em;
+    padding: 12px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    z-index: 1;
+    font-family: 'Roboto-Regular', 'Source Sans Pro', sans-serif;
+}
+.project {
+//  min-height: inherit;
+}
+.section-fixed {
+  width: 100%;
+  position: fixed !important;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  z-index: 0;
+}
+.red {
+  background-color:#e61e2b;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.color-green {
+    color: green;
+}
+.color-red {
+    color: #e61e2b;
+}
+.color-gray {
+    color:#333;
+}
+.section-gap {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  height: 100vh;
+}
+.section-gap.section-anchor {
+  visibility: hidden;
+  height: 100vh;
+}
+/*#wrap-question {
+  background-color: #ffffff;
+}*/
+#wrap-about-tet {
+  background-color: #e61e2b;
+}
+#contact > .inner{
+  background-color: #464646;
+}
+.question-block {
+  background: #ffffff;
+}
+.question-block h3 {
+	font-weight: bold;
+	font-family: 'Roboto-Bold', 'Source Sans Pro', sans-serif;
+	text-transform: capitalize;
+	font-size: 1.87em;
+	padding-top: 5%;
+}
+.question-block p {
+  color: #000 !important;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
+  padding-top: 5.5%;
+}
+.fixed-control.flex-control-nav {
+  position: fixed;
+  width: auto;
+  right: 10vw;
+  top: 0;
+  height: 60vh;
+  overflow: hidden;
+  padding-top: 40vh;
+  z-index: 0;
+}
+.fixed-control.flex-control-nav li {
+  display: block;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 736px) {
+    #contact .into-text-pos {
+        padding-top: 7.5%;
+    }
+}
+
+
+
+/*HH update*/
+#reviews-slider li {
+  cursor: pointer;
+}
+
+#reviews-slider .flex-active-slide {
+  color: #ababab !important;
+}
