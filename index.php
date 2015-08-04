@@ -22,13 +22,23 @@
         <link rel='stylesheet' id='style-css'  href='wp-content/themes/miagency/assets/css/custom.css' type='text/css' media='all' />
         <link rel='stylesheet' id='style-css'  href='wp-content/themes/miagency/assets/css/font-awesome.min.css' type='text/css' media='all' />
         <!--Le fav and touch icons-->
-        <link rel="shortcut icon" href="wp-content/themes/miagency/assets/css/images/favicon.png"/>
-        <link rel="apple-touch-icon" href="wp-content/themes/miagency/assets/css/images/favicon.png">
+        <link rel="shortcut icon" href="wp-content/themes/miagency/assets/css/images/favicon.ico"/>
+        <link rel="apple-touch-icon" href="wp-content/themes/miagency/assets/css/images/favicon.ico">
         <!--/Le fav and touch icons-->
         <!--[if IE ]>
                 <link rel="stylesheet" type="text/css" href="assets/css/ie9.css">
                 <script src="assets/js/html5.js"></script>
         <![endif]-->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21046224-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
     </head>
     <body>
             <!-- wrapper -->
@@ -56,8 +66,8 @@
                         <div class="greyAwning"></div>
                         <div class="width">
                             <div class="left" id="logo">
-                                <a href="index.html" title="My CMS">
-                                    <img class="logo" src="wp-content/themes/miagency/assets/css/images/logo.jpg" alt="My CMS" title="My CMS" />
+                                <a href="index.php" title="">
+                                    <img class="logo" src="wp-content/themes/miagency/assets/css/images/logo.jpg" alt="" title="" />
                                 </a>
                             </div>
                             <!-- HEADER MENU-->
@@ -65,8 +75,8 @@
                                 <ul id="menu-mainmenu" class="black">
                                     <li><a href="#lading-page" class="active">Home</a></li>
                                     <li><a href="#about-tet">We Get Tết</a></li>
+                                     <li><a href="#project">Cases</a></li>
                                     <li><a href="#question">Questions</a></li>
-                                    <li><a href="#project">Cases</a></li>
                                     <li><a href="#contact">Contact Us</a></li>
                                     <li class="flags">
                                          <a class="flag-us" href="index.php"><img src="wp-content/themes/miagency/assets/css/images/flag-us.jpg"></a>
@@ -113,7 +123,7 @@ our findings with you.</h1><br>
                                     </div>
                                 
                                     <div class="we-get-tet-video">
-                                        <iframe src="https://www.youtube.com/embed/51ylytMT57A?rel=0" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+                                        <iframe src="https://www.youtube.com/embed/Okg3IspcqQ0?rel=0" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
                                     </div>
                             </div>
                         </div>
@@ -123,7 +133,7 @@ our findings with you.</h1><br>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="col-lg-12 about-intro no-padding">
                                     <!-- Place somewhere in the <body> of your page -->
-                                    <div class="flexslider">
+                                    <div id="we-get-test-slider" class="flexslider">
                                         <ul class="slides">
                                             <li>
                                                 <div class="align-left no-padding">
@@ -405,107 +415,28 @@ shared video within 24 hours (even beating the Super Bowl teaser films) and had 
                                             </li>
                                         </ul>
                                     </div>
+                                    <div id="reviews2-slider" class="flexslider align-center">
+                                        <ul class="slides">
+                                            <li>The Origins</li>
+                                            <li>The Rituals</li>
+                                            <li>The Evolution</li>
+                                            <li>The Importance</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <section id='question' class='row'>
-                    <div id='wrap-question' class="span12 col-md-12 column_first column_last no-padding">
-                        <section class="question-block" ><div id="wrap-question" class="span12 col-md-12 column_first column_last no-padding">
-                                <div class="col-lg-9 col-md-10  col-sm-10 col-xs-10 align-center align-left home1-intro-text-pos">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-only list-question">
-                                        <h3 class="intro-text-head h3-30">So if you want your brands to succeed during Tet 2016, these are the questions you need to answer:</h3>
-                                        <div id="main-slider" class="flexslider" style="margin:0;">
-                                            <ul class="slides">
-                                                <li>
-                                                    <p class="p-24">
-                                                        1. Do you know how the ideas around Tet like family, rituals, celebrations have changed and how they impact your brand?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        2. Should your brand tap into classical culture or challenge it to reflect new emerging trends?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        3. This year, has anything changed significantly about your target audience?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        4. Who should be the most critical protagonist in you communication for your brand to stay relevant?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        5. Is your audience looking forward to successful Tet stories of the past, or are they challenging cliches and seeking a breath of fresh air?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        6. Are traditional mediums or new media the solution give your brands the quantum leap this Tet?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        7. Will you succeed in giving your brands a quantifiable advantage by making the right use of new and emerging media?
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p class="p-24">
-                                                        We’ve already spent many sleepless nights to find these answers. Reach out to us for a discussion, and we’ll be happy to share our views with you.
-                                                    </p><br><br><br><br>
-                                                </li>
-                                            </ul>
-                                        </div>
-										<div id="reviews-slider" class="flexslider align-center">
-                                                    <ul class="slides">
-                                                        <li>
-                                                            1
-                                                        </li>
-                                                        <li>
-                                                            2
-                                                        </li>
-                                                        <li>
-                                                            3
-                                                        </li>
-                                                        <li>
-                                                            4
-                                                        </li>
-                                                        <li>
-                                                            5
-                                                        </li>
-                                                        <li>
-                                                            6
-                                                        </li>
-                                                        <li>
-                                                            7
-                                                        </li>
-                                                        <li>
-                                                            +
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>                        
-                    </div>
-                </section>
-
                 <section id="project" class="row">
                     <div id="wrap-project" class="span12 col-md-12 column_first column_last no-padding">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <!-- PROJECT SECTION -->
-                            <section id="project-1" class="project-block row red">
+                            <section id="project-1" class="project-block row gray">
                                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
                                     <div class="col-lg-5 col-md-7 col-sm-7">
-                                        <h1 class="proj-text-head">2012</h1>
-                                        <h5 class="proj-text-view">
+                                        <h1 class="proj-text-head-white">2012</h1>
+                                        <h5 class="proj-text-view-white">
                                            Tet has always been a time for families to get together. But we found that with time,
 
 especially for the youth and young adults, this notion of family had taken on a much 
@@ -542,7 +473,7 @@ together.
                                 </div>
                             </section>
                             
-                            <section id="project-2" class="project-block row gray">
+                            <section id="project-2" class="project-block row red">
                                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
                                     <div class="col-lg-7 col-md-7 col-sm-7 home1-intro-text-pos">
                                         <!-- Insert to your webpage where you want to display the slider -->
@@ -558,8 +489,8 @@ together.
                                     </div>
                                     
                                     <div class="col-lg-5 col-md-7 col-sm-7">
-                                        <h1 class="proj-text-head-white">2013</h1>
-                                        <h5 class="proj-text-view-white">
+                                        <h1 class="proj-text-head">2013</h1>
+                                        <h5 class="proj-text-view">
                                            Once again leveraging on the most critical aspect of Tet – family togetherness. We
 
 realized that while in the past everyone took time off to celebrate Tet with their 
@@ -580,11 +511,11 @@ together by taking Tet to the father who was working as a bus driver through Tet
                                 </div>
                             </section>
                             
-                            <section id="project-3" class="project-block row red">
+                            <section id="project-3" class="project-block row gray">
                                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
                                     <div class="col-lg-5 col-md-7 col-sm-7">
-                                        <h1 class="proj-text-head">2014</h1>
-                                        <h5 class="proj-text-view">
+                                        <h1 class="proj-text-head-white">2014</h1>
+                                        <h5 class="proj-text-view-white">
                                            We found that the old Tet traditions had lost its relevance amongst the youth,
 
 making them feel disengaged and as a fall out, disconnected from their family and 
@@ -602,10 +533,11 @@ own twist to Tet chores and helping family reconnect and bond over doing the
                                    <div class="col-lg-7 col-md-7 col-sm-7 home1-intro-text-pos">
                                         <!-- Insert to your webpage where you want to display the slider -->
                                         <ul class="rslides" id="slider3">
-                                         <li><img src="wp-content/themes/miagency/assets/images/2014/print3.jpg" alt=""><p class="caption"></p></li>
+                                        
                                             <li class="video-slide">
                                                 <iframe src="https://www.youtube.com/embed/cPptNw8z7iE?rel=0" frameborder="0" width="100%" height="370px" allowfullscreen></iframe>
                                             </li>
+                                             <li><img src="wp-content/themes/miagency/assets/images/2014/print3.jpg" alt=""><p class="caption"></p></li>
                                             <li class="video-slide">
                                                 <iframe src="https://www.youtube.com/embed/KjH6Eo8D70Q?rel=0" frameborder="0" width="100%" height="370px" allowfullscreen></iframe>
                                             </li>
@@ -619,8 +551,9 @@ own twist to Tet chores and helping family reconnect and bond over doing the
                                                           <li><img src="wp-content/themes/miagency/assets/images/2014/print5.jpg" alt=""><p class="caption"></p></li>
                                         </ul>
                                         <ul id="slider3-pager">
-                                         <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_0.jpg" alt="" width="100"></a></li>
+                                        
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_1.jpg" alt="" width="100"></a></li>
+                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_0.jpg" alt="" width="100"></a></li>
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/img/tet/01_thumb.jpg" alt="" width="100"></a></li>
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_3.jpg" alt="" width="100"></a></li>
                                              <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_5.jpg" alt="" width="100"></a></li>
@@ -637,28 +570,29 @@ own twist to Tet chores and helping family reconnect and bond over doing the
                                 </div>
                             </section>
                             
-                            <section id="project-4" class="project-block row gray">
+                            <section id="project-4" class="project-block row red">
                                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
                                     <div class="col-lg-7 col-md-7 col-sm-7 home1-intro-text-pos">
                                         <!-- Insert to your webpage where you want to display the slider -->
                                         <ul class="rslides" id="slider4">
-                                        
+                                        <li class="video-slide">
+                                                <iframe src="https://www.youtube.com/embed/I2SWmegvFvc?rel=0" frameborder="0" width="100%" height="370px" allowfullscreen></iframe>
                                             <li class="video-slide">
                                                 <iframe src="https://www.youtube.com/embed/XqOgh-4CC_s?rel=0" frameborder="0" width="100%" height="370px" allowfullscreen></iframe>
                                             </li>
                                             <li class="video-slide">
                                                 <iframe src="https://www.youtube.com/embed/hoRsf68SK60?rel=0" frameborder="0" width="100%" height="370px" allowfullscreen></iframe>
                                             </li>
-                                            <li class="video-slide">
-                                                <iframe src="https://www.youtube.com/embed/I2SWmegvFvc?rel=0" frameborder="0" width="100%" height="370px" allowfullscreen></iframe>
+                                            
                                             </li>
                                              <li><img src="wp-content/themes/miagency/assets/images/2015/print1.jpg" alt=""><p class="caption"></p></li>
                                                           <li><img src="wp-content/themes/miagency/assets/images/2015/print2.jpg" alt=""><p class="caption"></p></li>
                                         </ul>
                                         <ul id="slider4-pager">
+                                        <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2015_3.jpg" alt="" width="100"></a></li>
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2015_1.jpg" alt="" width="100"></a></li>
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2015_2.jpg" alt="" width="100"></a></li>
-                                            <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2015_3.jpg" alt="" width="100"></a></li>
+                                            
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_5.jpg" alt="" width="100"></a></li>
                                             <li><a href="#"><img src="wp-content/themes/miagency/assets/images/2014_4.jpg" alt="" width="100"></a></li>
                                         </ul>
@@ -666,8 +600,8 @@ own twist to Tet chores and helping family reconnect and bond over doing the
                                     </div>
                                     
                                     <div class="col-lg-5 col-md-7 col-sm-7">
-                                        <h1 class="proj-text-head-white">2015</h1>
-                                        <h5 class="proj-text-view-white">
+                                        <h1 class="proj-text-head">2015</h1>
+                                        <h5 class="proj-text-view">
                                             We found that 1 in 4 young adults were choosing not to go back home to celebrate
 
 Tet with their families because of the growing economic burden on them in terms of 
@@ -699,6 +633,93 @@ it.
                         </div>
                     </div>
                 </section>
+                <section id='question' class='row'>
+                    <div id='wrap-question' class="span12 col-md-12 column_first column_last no-padding">
+                        <section class="question-block" ><div id="wrap-question" class="span12 col-md-12 column_first column_last no-padding">
+                                <div class="col-lg-9 col-md-10  col-sm-10 col-xs-10 align-center align-left home1-intro-text-pos">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-only list-question">
+                                        <h3 class="intro-text-head h3-30">So if you want your brands to succeed during Tet 2016, these are the questions you need to answer:</h3>
+                                        <div id="main-slider" class="flexslider" style="margin:0;">
+                                            <ul class="slides">
+                                                <li>
+                                                    <p class="p-24">
+                                                        1. Do you know how the ideas around Tet like family, rituals, celebrations have changed and how they impact your brand?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        2. Should your brand tap into classical culture or challenge it to reflect new emerging trends?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        3. This year, has anything changed significantly about your target audience?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        4. Who should be the most critical protagonist in you communication for your brand to stay relevant?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        5. Is your audience looking forward to successful Tet stories of the past, or are they challenging cliches and seeking a breath of fresh air?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        6. Are traditional mediums or new media the solution to give your brands the quantum leap this Tet?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        7. Will you succeed in giving your brands a quantifiable advantage by making the right use of new and emerging media?
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="p-24">
+                                                        We’ve already spent many sleepless nights to find these answers. Reach out to us for a discussion, and we’ll be happy to share our views with you.
+                                                    </p><br><br><br><br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                                <div id="reviews-slider" class="flexslider align-center">
+                                                    <ul class="slides">
+                                                        <li>
+                                                            1
+                                                        </li>
+                                                        <li>
+                                                            2
+                                                        </li>
+                                                        <li>
+                                                            3
+                                                        </li>
+                                                        <li>
+                                                            4
+                                                        </li>
+                                                        <li>
+                                                            5
+                                                        </li>
+                                                        <li>
+                                                            6
+                                                        </li>
+                                                        <li>
+                                                            7
+                                                        </li>
+                                                        <li>
+                                                            +
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>                        
+                    </div>
+                </section>
+
+                
             </section>
                 <section id="contact">
             <div class="container-fluid">
@@ -715,7 +736,19 @@ it.
                                     </div>
                                 </div>
                             </section>
-                            <!-- /LANDING SECTION --><section class="contact">
+                            <section class="contact-info">
+                                <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center align-left">
+                                    <div class="col-lg-3 col-md-9 col-sm-9"><img src="wp-content/themes/miagency/assets/css/images/anish.png" alt=""></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 info">
+                                        <p>Anish Daryani</p>
+                                        <p>Deputy Managing Director<p>
+                                        <p>+84 1292807745 </p>
+                                        <p>anish.daryani@phibious.com</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- /LANDING SECTION -->
+                            <section class="contact">
                                 <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 align-center"><div role="form" class="wpcf7" id="wpcf7-f91-p89-o1" lang="en-US" dir="ltr">
                                         <div class="screen-reader-response"></div>
                                         <?php
@@ -734,7 +767,7 @@ it.
                                             } // if
                                         ?>
 										
-										<form name="" action="contact_mailer.php" method="post" class="wpcf7-form" novalidate>
+                                        <form name="" action="index.php#contact" method="post" class="wpcf7-form" novalidate>
                                             <div class="messages text-center"></div>
                                             <div class="contact-group">
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 name">
@@ -760,7 +793,7 @@ it.
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit submit_button btn-effect submit_btn source-font col-lg-4 col-md-4 col-sm-4 col-xs-12 align-center send-message" id="submit_btn">
+                                                <input type="submit" name="submit" value="Send" class="wpcf7-form-control wpcf7-submit submit_button btn-effect submit_btn source-font col-lg-4 col-md-4 col-sm-4 col-xs-12 align-center send-message" id="submit_btn">
                                                 <img class="ajax-loader" src="http://demo.nrgthemes.com/projects/miagency/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -772,49 +805,9 @@ it.
                             </section>
                         </div>
                     </div>
-                </section></div>
-                <!-- footer -->
-                <!--            <footer id="footer">
-                                <div class="text-center footer-logo">
-                                    <a href="http://themesquared.com/miagency/project/#builder-module-548ee4ae64fc1">
-                                        <svg version="1.1" class="Layer-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                        <g>
-                                        <rect x="20.25" y="0"  width="3.75" height="3.75"/>
-                                        <rect x="10.125" y="0"  width="3.75" height="3.75"/>
-                                        <rect x="0" y="0"  width="3.75" height="3.75"/>
-                                        <rect x="20.25" y="10.125"  width="3.75" height="3.75"/>
-                                        <rect x="10.125" y="10.125"  width="3.75" height="3.75"/>
-                                        <rect x="0" y="10.125"  width="3.75" height="3.75"/>
-                                        <rect x="20.25" y="20.25"  width="3.75" height="3.75"/>
-                                        <rect x="10.125" y="20.25"  width="3.75" height="3.75"/>
-                                        <rect x="0" y="20.25"  width="3.75" height="3.75"/>
-                                        </g>
-                                        </svg>
-                                    </a>
-                                </div>
-                
-                                 FOOTER SECTION
-                                <div class="col-lg-8 align-center align-left social-share">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a  href="#" class=" btn-effect source-font">like us on facebook</a></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a  href="#" class=" btn-effect source-font">connect on linkedin</a></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a  href="#" class=" btn-effect source-font">follow us on twitter</a></div>	</div>
-                
-                                <div class="col-lg-8 align-center align-left address">
-                                     footer-widget-areas
-                                    <div class="col-md-4"><section id="text-2" class="widget widget_text">			<div class="textwidget"><p class="p-22">1079 Vian Street</p><p class="p-22">Suite North 3009</p><p class="p-22">Timesquare, NY031979</p></div>
-                                        </section></div><div class="col-md-4"><section id="text-3" class="widget widget_text">			<div class="textwidget"><p class="p-22"><a href="callto:0918884747">(091) 8884747</a></p><p class="p-22"><a href="mailto:hi@miagency.com">hi@miagency.com</a></p></div>
-                                        </section></div><div class="col-md-4"><section id="text-4" class="widget widget_text">			<div class="textwidget"><p class="p-22">&copy; 2014 MiAgency by Multia</p>	</div>
-                                        </section></div> /footer-widget-areas
-                                </div>
-                
-                
-                                <div class="back-top">
-                                    <a data-scroll href="#wrapper" class="trigger-back trigger-back-arrow trigger-back-arrow-down"><span class="centered-translate">Down</span></a>
-                                </div>
-                
-                                 /FOOTER SECTION
-                            </footer>-->
-                <!-- /footer -->
+                </section>
             </div>
+        </div>
         <!-- wrapper -->
         <!-- Powered by WordPress and the SpyroPress Framework -->
         <script type='text/javascript' src='wp-content/themes/miagency/assets/js/jquery-ui-1.10.4.min2c18.js?ver=1.10.4'></script>
@@ -827,10 +820,20 @@ it.
         <script>
             // Can also be used with $(document).ready()
             $(window).load(function () {
-                $('#about-tet .flexslider').flexslider({
+                $('#reviews2-slider').flexslider({
+                    animation: "slide",
+                    slideshow: false,
+                    controlNav: false,
+                    animationLoop: true,
+                    itemWidth: 110,
+                    asNavFor: '#we-get-test-slider',
+                });
+                $('#we-get-test-slider').flexslider({
                     animation: "fade",
                     smoothHeight: true,
                     slideshow: false,
+                    controlNav: false,
+                    sync: "#reviews2-slider",
                     start: function (slider) {
                         $('body').removeClass('loading');
                     }
@@ -840,16 +843,15 @@ it.
                     slideshow: false,
                     // slideshowSpeed: 10000,
                     controlNav: false,
-                    animationLoop: false,
-                    slideshow: true,
+                    animationLoop: true,
                     itemWidth: 50,
                     itemMargin: 5,
                     asNavFor: '#main-slider',
-                  });
+                });
                    
                   $('#main-slider').flexslider({
                     animation: "fade",
-                    slideshowSpeed: 10000,
+                    slideshow: false,
                     controlNav: false,
                     animationLoop: false,
                     // slideshow: false,
