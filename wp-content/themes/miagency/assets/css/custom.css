@@ -696,6 +696,7 @@ ul#menu-mainmenu li.flags a.flag-vi {
 
 #reviews2-slider .slides li {
     color: #fff;
+    font-family: 'Roboto-Black', 'Source Sans Pro', sans-serif;
 }
 
 #reviews2-slider .slides li:last-child {
